@@ -1,0 +1,123 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 25px 0 60px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: grey;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 60px;
+}
+
+.form_input {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 21px;
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+.form_input:focus {
+    outline: none;
+}
+
+.user {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    margin-bottom: 15px;
+    font-size: 21px;
+    list-style-type: none;
+}
+
+.buttons {
+    justify-self: self-end;
+}
+
+.delete, .edit, .form_button {
+    text-transform: uppercase;
+    color: gray;
+    cursor: pointer;
+    padding: 8px 0;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.form_button {
+    width: 150px;
+    background-color: rgba(0, 128, 0, 0.5);
+    border-color: transparent;
+    color: white;
+}
+
+.form_button:hover {
+    background-color:rgba(0, 128, 0, 0.8);
+}
+
+.delete {
+    margin-left: 15px;
+    width: 100px;
+}
+
+.delete:hover {
+    border: 1px solid transparent;
+    color: orangered;
+    background-color: rgba(255, 68, 0, 0.3);
+}
+
+.edit {
+    width: 135px;
+}
+
+.edit:hover {
+    color: green;
+    border: 1px solid transparent;
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+.input_name, .input_tel {
+    display: none;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    max-width: 250px;
+}
+
+.input_tel {
+    max-width: 200px;
+}
+
+.input_name:focus, .input_tel:focus {
+    outline: none;
+}
+
+.editing .input_name, .editing .input_tel{
+    display: block;
+}
+
+.editing .name, .editing .tel{
+    display: none;
+}
+
+._req {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+}
